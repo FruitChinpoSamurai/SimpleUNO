@@ -1,0 +1,122 @@
+.cardBackground {
+  width: 60px;
+  height: 100px; 
+  border-radius: 10px;
+  border-color: black;
+  border-style: dotted;
+  cursor: pointer;
+}
+
+.cardValue {
+  position: relative;
+  top: 30px;
+  left: 20px;
+  color: white; 
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  -webkit-text-stroke: 1px black;
+}
+
+.hand {
+  grid-area: downer;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  margin-top: 10px;
+}
+
+.statusSection {
+  grid-area: midStatus;
+  margin-left: 30px;
+}
+
+.statusBox {
+  width: 200px;
+  height: 80px;
+  border-radius: 15px;
+  border-color: black;
+  border-style: double;
+  padding: 10px;
+}
+
+.statusValue {
+  font-size: 16px;
+}
+
+.statusButtons {
+  width: 200px;
+  height: 90px;
+  border-radius: 15px;
+  border-color: black;
+  border-style: double;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.buttonUNO {
+  width: 180px;
+  height: 25px;
+  background-color: pink;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttonDraw {
+  width: 180px;
+  height: 25px;
+  background-color: violet;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttonText {
+  font-size: 16px;
+  margin-left: 70px;
+}
+
+.currentCardInPlay {
+  grid-area: midCards;
+  justify-self: center;
+}
+
+.leftOpponent {
+  grid-area: lefter;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.rightOpponent {
+  grid-area: righter;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 200px;
+}
+
+.upOpponent {
+  grid-area: upper;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ". upper upper ."
+    "lefter midCards midStatus righter"
+    ". downer downer .";
+}
