@@ -3,6 +3,7 @@ Another game project with React and JavaScript. Follows the same principles as t
 Before hosting the game with `node server.js` in a terminal, make sure to `npm install`.
 
 To connect to the game, input this url into your browser: `http://localhost:8000/`. The game will start only after the arrival of the 4th player. Initial player turn order is fixed.
+
 ![Screenshot](pre-game.png)
 
 House rules that I'm familiar with have been applied in order to make the game:
@@ -18,6 +19,7 @@ House rules that I'm familiar with have been applied in order to make the game:
 10. The first player to reach an empty hand will be chosen as the winner.
 
 Here is what the game looks like when a match has started:
+
 ![Screenshot](mid-game.png)
 
 Known bugs (I've forgotten to fix):
